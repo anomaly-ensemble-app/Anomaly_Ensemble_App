@@ -10,9 +10,8 @@
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
   - [App installation](#App-installation)
-- [Example usage](#Example-usage)
-  - [Reference documentation](#Reference-documentation)
-  - [Simple example](#Simple-example)
+- [Reference documentation](#Reference-documentation)
+  - [Basic example](#Basic-example)
 - [Community guidelines](#Community-guidelines)
   - [Contribute to the software](#Contribute-to-the-software)
   - [Report issues or problems with the software](#Report-issues-or-problems-with-the-software)
@@ -38,12 +37,10 @@ DataCleaningTool has been developed and tested in MATLAB Version: R2018b and req
 
 ### Application installation ###
 
-## Example usage ##
+## Reference documentation ##
+To access the the exemplary dataset [demodata.csv](https://github.com/devosmitachatterjee2018/DataCleaningTool/blob/main/demodata.csv)
 
-### Reference documentation ###
-To access the complete reference documentation with the exemplary dataset [demodata.csv](https://github.com/devosmitachatterjee2018/DataCleaningTool/blob/main/demodata.csv), refer to [UserManual.pdf](https://github.com/devosmitachatterjee2018/DataCleaningTool/blob/main/UserManual.pdf).
-
-### Simple example ###
+### Basic example ###
 
 ## Community guidelines ##
 
