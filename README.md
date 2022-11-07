@@ -32,7 +32,7 @@ Overview of AnomalyDetectionApp
 ## Installation instructions ##
 
 ### Prerequisites ###
-DataCleaningTool has been developed and tested in MATLAB Version: R2018b and requires the following toolboxes.
+AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires the following libraries.
 1. System Identification Toolbox;
 
 ### Application installation ###
