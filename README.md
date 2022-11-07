@@ -3,5 +3,20 @@
 ![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/anomaly-devosmita)
 
-.. image:: https://github.com/pypa/anomaly-devosmita/actions/workflows/ci.yml/badge.svg
-    :target: https://github.com/pypa/anomaly-devosmita/actions/workflows/ci.yml
+## Table of contents ##
+- [A statement of need](#A-statement-of-need)
+  - [What is DataCleaningTool?](#What-is-DataCleaningTool?)
+  - [Why is DataCleaningTool needed?](#Why-is-DataCleaningTool-needed?)
+  - [Target audience](#Target-audience)
+- [Installation instructions](#Installation-instructions)
+  - [Prerequisites](#Prerequisites)
+  - [App installation](#App-installation)
+- [Example usage](#Example-usage)
+  - [Reference documentation](#Reference-documentation)
+  - [Simple example](#Simple-example)
+- [Community guidelines](#Community-guidelines)
+  - [Contribute to the software](#Contribute-to-the-software)
+  - [Report issues or problems with the software](#Report-issues-or-problems-with-the-software)
+  - [Seek support](#Seek-support)
+- [Tests](#Tests)
+- [Software license](#Software-license)
