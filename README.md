@@ -20,3 +20,7 @@
   - [Seek support](#Seek-support)
 - [Tests](#Tests)
 - [Software license](#Software-license)
+
+## A statement of need ##
+
+### What is AnomalyDetectionApp? ###
