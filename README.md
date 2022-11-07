@@ -10,7 +10,7 @@
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
   - [App installation](#App-installation)
-- [Reference documentation](#Reference-documentation)
+- [Demo](#Demo)
   - [Basic example](#Basic-example)
 - [Community guidelines](#Community-guidelines)
   - [Contribute to the software](#Contribute-to-the-software)
@@ -40,12 +40,12 @@ Overview of AnomalyDetectionApp
 
 ### Prerequisites ###
 AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires the following libraries.
-1. System Identification Toolbox;
+1. ;
 
 ### Application installation ###
 
-## Reference documentation ##
-To access the the exemplary dataset [demodata.csv](https://github.com/devosmitachatterjee2018/DataCleaningTool/blob/main/demodata.csv)
+## Demo ##
+To access the the exemplary dataset 
 
 ### Basic example ###
 
