@@ -1,3 +1,4 @@
 # Anomaly v0.1
 
-![alt text](https://github.com/tblume1992/ThymeBoost/blob/main/static/tb_logo.png?raw=true "Output 1")
+![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/anomaly-devosmita)
