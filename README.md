@@ -24,7 +24,14 @@
 ### What is AnomalyDetectionApp? ###
 
 AnomalyDetectionApp is a library that is an ensemble of multiple independent anomaly detection models to derive better predictions. 
+Isolation forest
+DBSCAN
+ThymeBoost
+One-Class Support Vector Machine
+LOF
+Tadgan
 
+more accurate predictions
 Overview of AnomalyDetectionApp 
 
 ### Target audience ###
