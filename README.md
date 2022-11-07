@@ -5,7 +5,7 @@
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
-  - [What is AnomalyDetectionApp?](#What-is-AnomalyDetectionApp?)
+  - [AnomalyDetectionApp](#AnomalyDetectionApp)
   - [Target audience](#Target-audience)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
