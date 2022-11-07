@@ -1,4 +1,4 @@
-# Anomaly v0.1
+# AnomalyDetectionApp v0.1
 
 ![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/anomaly-devosmita)
@@ -6,7 +6,6 @@
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
   - [What is AnomalyDetectionApp?](#What-is-AnomalyDetectionApp?)
-  - [Why is AnomalyDetectionApp needed?](#Why-is-AnomalyDetectionApp-needed?)
   - [Target audience](#Target-audience)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
@@ -24,3 +23,9 @@
 ## A statement of need ##
 
 ### What is AnomalyDetectionApp? ###
+
+AnomalyDetectionApp is a library that is an ensemble of multiple independent anomaly detection models to derive better predictions. 
+
+Overview of AnomalyDetectionApp 
+
+### Target audience ###
