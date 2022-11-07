@@ -5,8 +5,8 @@
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
-  - [What is DataCleaningTool?](#What-is-DataCleaningTool?)
-  - [Why is DataCleaningTool needed?](#Why-is-DataCleaningTool-needed?)
+  - [What is AnomalyDetectionApp?](#What-is-AnomalyDetectionApp?)
+  - [Why is AnomalyDetectionApp needed?](#Why-is-AnomalyDetectionApp-needed?)
   - [Target audience](#Target-audience)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
