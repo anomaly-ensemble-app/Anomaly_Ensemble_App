@@ -39,7 +39,7 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
     - kernel: best optimal kernal using Optuna hyperparameter optimization framework.
 
 5. Local Outlier Factor
-    - 
+    - alg
 
 6. TADGAN
     - epochs: best optimal epoch using Orion hyperparameter optimization framework.
