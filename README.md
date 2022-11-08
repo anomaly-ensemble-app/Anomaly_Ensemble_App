@@ -70,12 +70,9 @@ Any feature request or issue can be submitted to the the [Issues](https://github
 3. Python version and Operating System.
 
 ### Seek support ###
-If any support needed, the author can be contacted by e-mail <chatterjeedevosmita267@gmail.com>. 
+If any support needed, the authors can be contacted by e-mail <@gmail.com>. 
 
 ## Tests ##
-Step 1. 
-
-Step 2. 
 
 ## Software license ##
 AnomalyDetectionApp is released under the MIT License.
