@@ -11,7 +11,8 @@
   - [Prerequisites](#Prerequisites)
   - [App installation](#App-installation)
 - [Demo](#Demo)
-  - [Basic example](#Basic-example)
+  - [Data](#Data)
+  - [Code](#Code)
 - [Community guidelines](#Community-guidelines)
   - [Contribute to the software](#Contribute-to-the-software)
   - [Report issues or problems with the software](#Report-issues-or-problems-with-the-software)
@@ -38,17 +39,21 @@ AnomalyDetectionApp should be of interest to readers, mainly within the area of 
 ## Installation instructions ##
 
 ### Prerequisites ###
-AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires the following libraries.
-1. ;
+AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires some libraries.
+
+```python3 -m pip install -r "C:\Users\A408565\source\repos\Anomaly Detection Ensemble\requirements.txt"```
 
 ### Application installation ###
-```python3 -m pip install anomaly_devosmita```
+```python3 -m pip install AnomalyDetectionApp```
 
 ## Demo ##
-To access the the exemplary dataset 
-```from anomaly_devosmita import example```
 
-### Basic example ###
+### Data ###
+To access the the exemplary dataset 
+
+### Code ###
+
+```from AnomalyDetectionApp import example```
 
 ## Community guidelines ##
 
@@ -69,7 +74,7 @@ Any feature request or issue can be submitted to the the [Issues](https://github
 3. Python version and Operating System.
 
 ### Seek support ###
-If any support needed, the authors can be contacted by e-mail <@gmail.com>. 
+If any support needed, the authors can be contacted by e-mail @volvo.com. 
 
 ## Tests ##
 
