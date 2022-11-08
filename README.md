@@ -26,6 +26,7 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
 
 **Choice of hyperparameters**
 1. Isolation Forest
+    - contamination = percentage of expected outliers.
 
 2. DBSCAN 
     - min_samples: For n-dimensional data, min_samples = 2\*n, where n = the dimensionlity of the data.
