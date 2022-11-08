@@ -3,8 +3,7 @@
 ![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package)
 
 
-.. image:: https://github.com/pypa/readme_renderer/actions/workflows/ci.yml/badge.svg
-    :target: https://github.com/pypa/readme_renderer/actions/workflows/ci.yml
+![PyPI](https://github.com/pypa/readme_renderer/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
