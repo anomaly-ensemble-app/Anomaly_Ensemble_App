@@ -43,9 +43,11 @@ AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and re
 1. ;
 
 ### Application installation ###
+```python3 -m pip install anomaly_devosmita```
 
 ## Demo ##
 To access the the exemplary dataset 
+```from anomaly_devosmita import example```
 
 ### Basic example ###
 
