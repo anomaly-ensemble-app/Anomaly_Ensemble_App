@@ -17,7 +17,6 @@
   - [Contribute to the software](#Contribute-to-the-software)
   - [Report issues or problems with the software](#Report-issues-or-problems-with-the-software)
   - [Seek support](#Seek-support)
-- [Tests](#Tests)
 - [Software license](#Software-license)
 
 ## A statement of need ##
@@ -58,7 +57,7 @@ To access the the exemplary dataset
 ## Community guidelines ##
 
 ### Contribute to the software ###
-To contribute fixes, feature modifications or enhancements, a pull request can be created in the [Pull requests](https://github.com/devosmitachatterjee2018/Anomaly/pulls) tab of the project GitHub repository. When contributing to the software, the folowing should be included.
+To contribute fixes, feature modifications or enhancements, a pull request can be created in the [Pull requests](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/pulls) tab of the project GitHub repository. When contributing to the software, the folowing should be included.
 1. Description of the change;
 
 2. Check that all tests pass;
@@ -66,7 +65,7 @@ To contribute fixes, feature modifications or enhancements, a pull request can b
 3. Include new tests to report the change.
 
 ### Report issues or problems with the software ###
-Any feature request or issue can be submitted to the the [Issues](https://github.com/devosmitachatterjee2018/Anomaly/issues) tab of the project GitHub repository. When reporting issues with the software, the folowing should be included.
+Any feature request or issue can be submitted to the the [Issues](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/issues) tab of the project GitHub repository. When reporting issues with the software, the folowing should be included.
 1. Description of the problem;
 
 2. Error message;
@@ -75,8 +74,6 @@ Any feature request or issue can be submitted to the the [Issues](https://github
 
 ### Seek support ###
 If any support needed, the authors can be contacted by e-mail @volvo.com. 
-
-## Tests ##
 
 ## Software license ##
 AnomalyDetectionApp is released under the MIT License.
