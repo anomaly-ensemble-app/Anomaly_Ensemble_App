@@ -4,8 +4,8 @@
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
-  - [What is AnomalyDetectionApp?](#What-is-AnomalyDetectionApp?)
-  - [Why is AnomalyDetectionApp needed?](#Why_is_AnomalyDetectionApp_needed?)
+  - [AnomalyDetectionApp](#AnomalyDetectionApp?)
+  - [Features](#Features?)
   - [Target audience](#Target-audience)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
