@@ -1,9 +1,6 @@
 # AnomalyDetectionApp v0.1
 
-![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package)
-
-
-![PyPI](https://github.com/pypa/readme_renderer/actions/workflows/ci.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package) ![CI](https://github.com/pypa/readme_renderer/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
