@@ -64,7 +64,7 @@ AnomalyDetectionApp should be of interest to readers who are involved in outlier
 ### Prerequisites ###
 AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires some libraries.
 
-```python3 -m pip install -r "C:\Users\A408565\source\repos\Anomaly Detection Ensemble\requirements.txt"```
+```python3 -m pip install -r "topath\requirements.txt"```
 
 ### Application installation ###
 ```python3 -m pip install Anomaly_Ensemble_App```
@@ -72,7 +72,7 @@ AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and re
 ## Demo ##
 
 ### Data ###
-Use exemplary dataset 
+Use exemplary datasets 
 
 ### Code ###
 
