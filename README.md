@@ -1,6 +1,7 @@
 # Anomaly_Ensemble_App v0.0.1
 
-![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/actions/workflows/ci.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App
+/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
@@ -57,12 +58,12 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
 ### Target audience ###
-AnomalyDetectionApp should be of interest to readers who are involved in outlier detection for time series data.
+Anomaly_Ensemble_App should be of interest to readers who are involved in outlier detection for time series data.
 
 ## Installation instructions ##
 
 ### Prerequisites ###
-AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and requires some libraries.
+Anomaly_Ensemble_App has been developed and tested in Python Version: v3.7 and requires some libraries.
 
 ```python3 -m pip install -r "topath\requirements.txt"```
 
