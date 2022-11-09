@@ -27,6 +27,14 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
 Process Flow Diagram:
 <img src="figures/.png" width="650" height="600">
 
+### Features ###
+1. Handles time series data.
+2. Deals with trends and seasonality.
+3. Provides options to choose anomaly detection models for ensemble learning.
+4. Suggests hyperparameters for each anomaly detection model.
+4. Provides execution time for each anomaly detection model.
+6. Provides more accurate anomaly predictions. 
+
 **Choice of hyperparameters**
 1. Isolation Forest
     - contamination = percentage of expected outliers.
@@ -46,14 +54,6 @@ Process Flow Diagram:
 
 6. TADGAN
     - epochs: best optimal epoch using Orion hyperparameter optimization framework.
-
-### Features ###
-1. Handles time series data.
-2. Deals with trends and seasonality.
-3. Provides options to choose anomaly detection models for ensemble learning.
-4. Suggests hyperparameters for each anomaly detection model.
-4. Provides execution time for each anomaly detection model.
-6. Provides more accurate anomaly predictions. 
 
 ### Target audience ###
 AnomalyDetectionApp should be of interest to readers who are involved in anomaly detection in time series data.
