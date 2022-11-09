@@ -1,10 +1,10 @@
-# AnomalyDetectionApp v0.1
+# Anomaly_Ensemble_App v0.0.1
 
 ![PyPI](https://img.shields.io/pypi/v/anomaly-devosmita?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
-  - [Overview of AnomalyDetectionApp](#Overview_of_AnomalyDetectionApp)
+  - [Overview of Anomaly_Ensemble_App](#Overview_of_Anomaly_Ensemble_App)
   - [Features](#Features)
   - [Target audience](#Target-audience)
 - [Installation instructions](#Installation-instructions)
@@ -21,8 +21,8 @@
 
 ## A statement of need ##
 
-### Overview of AnomalyDetectionApp ###
-AnomalyDetectionApp is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines the predictions of multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold.
+### Overview of Anomaly_Ensemble_App ###
+Anomaly_Ensemble_App is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines the predictions of multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold.
 
 **Process Flow Diagram:**
 
@@ -72,11 +72,11 @@ AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and re
 ## Demo ##
 
 ### Data ###
-To access the the exemplary dataset 
+Use exemplary dataset 
 
 ### Code ###
 
-```from AnomalyDetectionApp import example```
+```from Anomaly_Ensemble_App.anomaly_main import *```
 
 ## Community guidelines ##
 
@@ -100,5 +100,5 @@ Any feature request or issue can be submitted to the the [Issues](https://github
 If any support needed, the authors can be contacted by e-mail @volvo.com. 
 
 ## Software license ##
-AnomalyDetectionApp is released under the MIT License.
+Anomaly_Ensemble_App is released under the MIT License.
 
