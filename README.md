@@ -24,7 +24,8 @@
 ### Overview of AnomalyDetectionApp ###
 AnomalyDetectionApp is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines the predictions of multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold.
 
-Process Flow Diagram:
+**Process Flow Diagram**
+
 <img src="AnamalyDetectionApp.png" width="650" height="400">
 
 ### Features ###
