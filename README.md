@@ -26,7 +26,7 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
 
 **Process Flow Diagram:**
 
-<img src="AnamalyDetectionApp.png" width="650" height="400">
+<img src="AnamalyDetectionApp.png" width="750" height="500">
 
 ### Features ###
 1. Handles time series data.
