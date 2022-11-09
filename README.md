@@ -51,6 +51,7 @@ Process Flow Diagram:
 1. Handles time series data.
 2. Deals with trends and seasonality.
 3. Suggests hyperparameters for each anomaly detection model.
+4. Provides execution time for each anomaly detection model.
 4. Provides more accurate anomaly predictions. 
 
 ### Target audience ###
