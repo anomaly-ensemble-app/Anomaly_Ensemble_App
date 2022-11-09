@@ -38,7 +38,7 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
 
 **Choice of hyperparameters:**
 1. Isolation Forest
-    - contamination = percentage of expected outliers.
+    - contamination = Percentage of expected outliers.
 
 2. DBSCAN 
     - min_samples: For n-dimensional data, min_samples = 2\*n, where n = the dimensionlity of the data.
@@ -48,13 +48,13 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
     - seasonal_period: seasonal_period = first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
 
 4. One-Class Support Vector Machine
-    - kernel: best optimal kernal using Optuna hyperparameter optimization framework.
+    - kernel: Best optimal kernal using Optuna hyperparameter optimization framework.
 
 5. Local Outlier Factor
-    - alg: 
+    - alg: Default.
 
 6. TADGAN
-    - epochs: best optimal epoch using Orion hyperparameter optimization framework.
+    - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
 ### Target audience ###
 AnomalyDetectionApp should be of interest to readers who are involved in anomaly detection in time series data.
