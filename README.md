@@ -57,7 +57,7 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
 ### Target audience ###
-AnomalyDetectionApp should be of interest to readers who are involved in anomaly detection in time series data.
+AnomalyDetectionApp should be of interest to readers who are involved in outlier detection for time series data.
 
 ## Installation instructions ##
 
