@@ -24,6 +24,9 @@
 ### Overview of AnomalyDetectionApp ###
 AnomalyDetectionApp is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines the predictions of multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold.
 
+Process Flow Diagram:
+<img src="figures/.png" width="650" height="600">
+
 **Choice of hyperparameters**
 1. Isolation Forest
     - contamination = percentage of expected outliers.
@@ -39,24 +42,21 @@ AnomalyDetectionApp is an anomaly detection python library that is based on the 
     - kernel: best optimal kernal using Optuna hyperparameter optimization framework.
 
 5. Local Outlier Factor
-    - alg
+    - alg: 
 
 6. TADGAN
     - epochs: best optimal epoch using Orion hyperparameter optimization framework.
 
-Process Flow Diagram:
-
 ### Features ###
-
 1. Handles time series data.
 2. Deals with trends and seasonality.
-3. Suggests hyperparameters for each anomaly detection model.
+3. Provides options to choose anomaly detection models for ensemble learning.
+4. Suggests hyperparameters for each anomaly detection model.
 4. Provides execution time for each anomaly detection model.
-4. Provides more accurate anomaly predictions. 
+6. Provides more accurate anomaly predictions. 
 
 ### Target audience ###
-
-AnomalyDetectionApp should be of interest to readers, mainly within the area of data science.
+AnomalyDetectionApp should be of interest to readers who are involved in anomaly detection in time series data.
 
 ## Installation instructions ##
 
