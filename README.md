@@ -1,7 +1,6 @@
 # Anomaly_Ensemble_App v0.0.1
 
-![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App
-/actions/workflows/ci.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
@@ -27,7 +26,7 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 **Process Flow Diagram:**
 
-<img src="AnamalyDetectionApp.png" width="800" height="500">
+<img src="Anomaly_Ensemble_App.png" width="800" height="500">
 
 ### Features ###
 1. Handles time series data.
