@@ -51,7 +51,7 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
     - kernel: Best optimal kernal using Optuna hyperparameter optimization framework.
 
 5. Local Outlier Factor
-    - alg: Best optimal kernal using hyperparameter optimization framework.
+    - alg: Best optimal kernal using Optuna hyperparameter optimization framework.
 
 6. TADGAN
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
