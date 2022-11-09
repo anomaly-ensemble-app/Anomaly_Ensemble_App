@@ -67,7 +67,7 @@ AnomalyDetectionApp has been developed and tested in Python Version: v3.7 and re
 ```python3 -m pip install -r "C:\Users\A408565\source\repos\Anomaly Detection Ensemble\requirements.txt"```
 
 ### Application installation ###
-```python3 -m pip install AnomalyDetectionApp```
+```python3 -m pip install Anomaly_Ensemble_App```
 
 ## Demo ##
 
@@ -81,7 +81,7 @@ Use exemplary dataset
 ## Community guidelines ##
 
 ### Contribute to the software ###
-To contribute fixes, feature modifications or enhancements, a pull request can be created in the [Pull requests](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/pulls) tab of the project GitHub repository. When contributing to the software, the folowing should be included.
+To contribute fixes, feature modifications or enhancements, a pull request can be created in the [Pull requests](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/pulls) tab of the project GitHub repository. When contributing to the software, the folowing should be included.
 1. Description of the change;
 
 2. Check that all tests pass;
@@ -89,7 +89,7 @@ To contribute fixes, feature modifications or enhancements, a pull request can b
 3. Include new tests to report the change.
 
 ### Report issues or problems with the software ###
-Any feature request or issue can be submitted to the the [Issues](https://github.com/devosmitachatterjee2018/AnomalyDetectionApp/issues) tab of the project GitHub repository. When reporting issues with the software, the folowing should be included.
+Any feature request or issue can be submitted to the the [Issues](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/issues) tab of the project GitHub repository. When reporting issues with the software, the folowing should be included.
 1. Description of the problem;
 
 2. Error message;
