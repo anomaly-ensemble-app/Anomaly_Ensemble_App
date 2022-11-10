@@ -1,4 +1,4 @@
-# Anomaly_Ensemble_App v0.0.1
+# Anomaly_Ensemble_App
 
 ![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/actions/workflows/ci.yml/badge.svg)
 
