@@ -76,7 +76,7 @@ Use exemplary datasets
 
 ### Code ###
 
-```from Anomaly_Ensemble_App.anomaly_main import *```
+```from anomaly_ensemble_app.anomaly_main import *```
 
 ## Community guidelines ##
 
