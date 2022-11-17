@@ -45,7 +45,7 @@ There are several modules in the package. Each module has several functions.
 ### Module: anomaly_data_preprocessing module ###
 1. min\_samples = find\_min\_samples(df)
    - Definition: This function is used to find an hyperparameter for DBSCAN.
-      -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
+      - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
    - Input Parameters: df is the dataset.
    - Output: Returns min\_samples.
 
