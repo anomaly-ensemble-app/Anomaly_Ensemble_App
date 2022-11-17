@@ -37,26 +37,6 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 4. Provides execution time for each anomaly detection model.
 6. Provides more accurate anomaly predictions. 
 
-**Choice of hyperparameters:**
-1. Isolation Forest
-    - contamination = Percentage of expected outliers.
-
-2. DBSCAN 
-    - min_samples: For n-dimensional data, min_samples = 2\*n, where n = the dimensionlity of the data.
-    - eps: eps = the point of maximum curvature of the k-NN distance graph.
-  
-3. ThymeBoost
-    - seasonal_period: seasonal_period = first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
-
-4. One-Class Support Vector Machine
-    - kernel: Best optimal kernal using Optuna hyperparameter optimization framework.
-
-5. Local Outlier Factor
-    - alg: Best optimal algorithm using Optuna hyperparameter optimization framework.
-
-6. TADGAN
-    - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
-
 ## Functionality ##
 There are several modules in the package. Each module has several functions.
 
@@ -185,6 +165,27 @@ There are several modules in the package. Each module has several functions.
      -- \** kwargs takes the hyperparameter for tadgan, epochs.
    - Output: Returns the anomaly labels.
    -
+**Choice of hyperparameters:**
+1. Isolation Forest
+    - contamination = Percentage of expected outliers.
+
+2. DBSCAN 
+    - min_samples: For n-dimensional data, min_samples = 2\*n, where n = the dimensionlity of the data.
+    - eps: eps = the point of maximum curvature of the k-NN distance graph.
+  
+3. ThymeBoost
+    - seasonal_period: seasonal_period = first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
+
+4. One-Class Support Vector Machine
+    - kernel: Best optimal kernal using Optuna hyperparameter optimization framework.
+
+5. Local Outlier Factor
+    - alg: Best optimal algorithm using Optuna hyperparameter optimization framework.
+
+6. TADGAN
+    - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
+
+
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
 2. comments disappeared in code.
