@@ -63,13 +63,13 @@ There are several modules in the package. Each module has several functions.
 1. **Module: anomaly_libs module**
 
 2. **Module: anomaly_data_preprocessing module**
-  1. min\_samples = find\_min\_samples(df)
+  * min\_samples = find\_min\_samples(df)
      - Definition: This function is used to find an hyperparameter for DBSCAN.
        -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
      - Input Parameters: df is the dataset.
      - Output: Returns min\_samples as 2\*n, where n = the dimensionlity of the data.
 
-  2. eps = find\_eps(df)
+  * eps = find\_eps(df)
      - Definition: This function is used to find an hyperparameter for DBSCAN.
        -- Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
      - Input Parameters: df is the dataset.
