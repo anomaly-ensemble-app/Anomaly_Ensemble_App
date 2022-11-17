@@ -57,12 +57,21 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
 **Functionality:**
-1. Find trend and then detrend: 
-   - To find trend, Augmented Dickey Fuller Test (ADF test) is used.
+1. find_min_samples
+   - 
 
-2. Find seasonality and deseasonalize:
+2. detrend
+   - Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
+   - Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
 
-3.
+3. deseasonalise:
+   - Determine seasonality: Autocorrelation function is used to check seasonality.
+   - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
+
+4.
+
+**Not implemented yet:**
+1. 95% confidence interval (+-1.96/sqrt(n))
 
 ### Target audience ###
 Anomaly_Ensemble_App should be of interest to readers who are involved in outlier detection for time series data.
