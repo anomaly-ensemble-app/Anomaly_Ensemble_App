@@ -58,45 +58,68 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
 ## Functionality ##
-**Modules:**
-**Functions:**
-1. min\_samples = find\_min\_samples(df)
-   - Definition: This function is used to find an hyperparameter for DBSCAN.
-     -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
-   - Input Parameters: df is the dataset.
-   - Output: Returns min\_samples as 2\*n, where n = the dimensionlity of the data.
+There are several modules in the package. Each module has several functions.
 
-2. eps = find\_eps(df)
-   - Definition: This function is used to find an hyperparameter for DBSCAN.
-     -- Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
-   - Input Parameters: df is the dataset.
-   - Output: Returns eps.
+1. **Module: anomaly_libs module**
 
-3. p = find\_seasonal\_period(df)
-   - Definition: This function is used to find an hyperparameter for Thymeboost.
-     -- Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
-   - Input Parameters: df is the dataset.
-   - Output: Returns seasonal\_period.
+2. **Module: anomaly_data_preprocessing module**
+  1. min\_samples = find\_min\_samples(df)
+     - Definition: This function is used to find an hyperparameter for DBSCAN.
+       -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
+     - Input Parameters: df is the dataset.
+     - Output: Returns min\_samples as 2\*n, where n = the dimensionlity of the data.
 
-4. output = detrend(df, id\_column, time\_column, time\_format):
-   - Definition: This function is used to identify trend and then, detrend a time series.
-     -- Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
-     -- Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
-   - Input Parameters: 
-     -- df is the dataset.
-     -- id\_column
-     -- time\_column
-     -- time\_format
-   - Output: Returns detrended time series.
+  2. eps = find\_eps(df)
+     - Definition: This function is used to find an hyperparameter for DBSCAN.
+       -- Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
+     - Input Parameters: df is the dataset.
+     - Output: Returns eps.
 
-3. deseasonalise:
-   - Determine seasonality: Autocorrelation function is used to check seasonality.
-   - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
+  3. p = find\_seasonal\_period(df)
+     - Definition: This function is used to find an hyperparameter for Thymeboost.
+       -- Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
+     - Input Parameters: df is the dataset.
+     - Output: Returns seasonal\_period.
 
-4.
-2. parameters_oc_svm
-   - parameters_oc_svm is an hyperparameter for One-Class Support Vector Machine.
-   - Best optimal kernal using Optuna hyperparameter optimization framework
+  4. output = detrend(df, id\_column, time\_column, time\_format):
+     - Definition: This function is used to identify trend and then, detrend a time series.
+       -- Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
+       -- Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
+     - Input Parameters: 
+       -- df is the dataset.
+       -- id\_column is the column over which the function will iterate.
+       -- time\_column is the datetime column.
+       -- time\_format is the datetime format of time\_column.
+     - Output: Returns detrended time series.
+
+  5.  output = deseasonalise(df, id_column, time_column, time_format)
+     - Definition: This function is used to determine seasonality and then, deseasonlise a time series.
+       -- Determine seasonality: Autocorrelation function is used to check seasonality.
+       -- Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
+     - Input Parameters: 
+       -- df is the dataset.
+       -- id\_column is the column over which the function will iterate.
+       -- time\_column is the datetime column.
+       -- time\_format is the datetime format of time\_column.
+     - Output: Returns deseasonalised time series.
+
+  6. (best_nu, best_kernel) = parameters_oc_svm(X, y, trials=10)
+     - Definition: This function is used to parameters for One Class SVM.
+       -- Best optimal kernal using Optuna hyperparameter optimization framework
+     - Input Parameters: 
+       -- df is the dataset.
+       -- id\_column is the column over which the function will iterate.
+       -- time\_column is the datetime column.
+       -- time\_format is the datetime format of time\_column.
+     - Output: Returns best_nu and best_kernel.
+
+3. **Module: anomaly_models module**
+  1. min\_samples = find\_min\_samples(df)
+     - Definition: This function is used to find an hyperparameter for DBSCAN.
+       -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
+     - Input Parameters: df is the dataset.
+     - Output: Returns min\_samples as 2\*n, where n = the dimensionlity of the data.
+
 
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n))
