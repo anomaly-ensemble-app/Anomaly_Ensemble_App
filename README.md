@@ -58,7 +58,7 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 **Functionality:**
 1. Find trend and then detrend: 
-    -- To find trend, Augmented Dickey Fuller Test (ADF test) is used.
+   - To find trend, Augmented Dickey Fuller Test (ADF test) is used.
 
 2. Find seasonality and deseasonalize:
 
