@@ -7,6 +7,7 @@
   - [Overview of Anomaly_Ensemble_App](#Overview_of_Anomaly_Ensemble_App)
   - [Features](#Features)
   - [Target audience](#Target-audience)
+- [Functionality](#Functionality)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
   - [App installation](#App-installation)
@@ -22,7 +23,7 @@
 ## A statement of need ##
 
 ### Overview of Anomaly_Ensemble_App ###
-Anomaly_Ensemble_App is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold.
+Anomaly_Ensemble_App is an anomaly detection python library that is based on the ensemble learning algorithm to derive better predictions. It combines multiple independent anomaly detection models such as Isolation Forest, DBSCAN, ThymeBoost, One-Class Support Vector Machine, Local Outlier Factor and TADGAN. Then, it returns the output according as the average prediction of the individual models is above a certain threshold. This package is specially designed for univariate time series.
 
 **Process Flow Diagram:**
 
@@ -56,19 +57,46 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 6. TADGAN
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
 
-**Functionality:**
-1. find_min_samples
-   - 
+## Functionality ##
+**Modules:**
+**Functions:**
+1. min\_samples = find\_min\_samples(df)
+   - Definition: This function is used to find an hyperparameter for DBSCAN.
+     -- Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
+   - Input Parameters: df is the dataset.
+   - Output: Returns min\_samples as 2\*n, where n = the dimensionlity of the data.
 
-2. detrend
-   - Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
-   - Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
+2. eps = find\_eps(df)
+   - Definition: This function is used to find an hyperparameter for DBSCAN.
+     -- Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
+   - Input Parameters: df is the dataset.
+   - Output: Returns eps.
+
+3. p = find\_seasonal\_period(df)
+   - Definition: This function is used to find an hyperparameter for Thymeboost.
+     -- Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
+   - Input Parameters: df is the dataset.
+   - Output: Returns seasonal\_period.
+
+4. output = detrend(df, id\_column, time\_column, time\_format):
+   - Definition: This function is used to identify trend and then, detrend a time series.
+     -- Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
+     -- Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
+   - Input Parameters: 
+     -- df is the dataset.
+     -- id\_column
+     -- time\_column
+     -- time\_format
+   - Output: Returns detrended time series.
 
 3. deseasonalise:
    - Determine seasonality: Autocorrelation function is used to check seasonality.
    - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
 
 4.
+2. parameters_oc_svm
+   - parameters_oc_svm is an hyperparameter for One-Class Support Vector Machine.
+   - Best optimal kernal using Optuna hyperparameter optimization framework
 
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n))
