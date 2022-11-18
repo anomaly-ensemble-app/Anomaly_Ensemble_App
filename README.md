@@ -179,6 +179,17 @@ There are several modules in the package. Each module has several functions.
      - n_voters
      - threshold 
    - Output: Returns the anomaly labels. 
+
+2. (election_results, models_dict) = get_labels(X, \** kwargs)
+   - Definition: This function is used to .
+     - Model: 
+     - Prediction labels: Anomaly marked as 1 and normal as 0.
+   - Input Parameters: 
+     - X
+     - \** kwargs
+   - Output: Returns the anomaly labels. 
+     - election_results
+     - models_dict
 ### Module anomaly_main ###
 
 **Choice of hyperparameters:**
