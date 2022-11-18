@@ -43,6 +43,9 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 4. Provides execution time for each anomaly detection model.
 6. Provides more accurate anomaly predictions. 
 
+### Target audience ###
+Anomaly_Ensemble_App should be of interest to readers who are involved in outlier detection for time series data.
+
 ## Functionality ##
 There are several modules in the package. Each module has several functions.
 <img src="package_structure.png" width="500" height="400">
@@ -223,8 +226,7 @@ There are several modules in the package. Each module has several functions.
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
 2. comments disappeared in code.
 
-### Target audience ###
-Anomaly_Ensemble_App should be of interest to readers who are involved in outlier detection for time series data.
+
 
 ## Installation instructions ##
 
