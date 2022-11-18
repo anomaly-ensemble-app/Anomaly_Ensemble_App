@@ -1,6 +1,7 @@
 # Anomaly_Ensemble_App
 
-![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) ![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/actions/workflows/ci.yml/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) 
+[comment]: # (![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/actions/workflows/ci.yml/badge.svg))
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
