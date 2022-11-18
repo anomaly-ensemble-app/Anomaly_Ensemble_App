@@ -8,6 +8,11 @@
   - [Features](#Features)
   - [Target audience](#Target-audience)
 - [Functionality](#Functionality)
+  - [Module anomaly_libs](#Module anomaly_libs)
+  - [Module anomaly_data_preprocessing](#Module-anomaly_data_preprocessing)
+  - [Module anomaly_models](#Module-anomaly_models)
+  - [Module anomaly_detection](#Module-anomaly_detection)
+  - [Module anomaly_main](#Module-anomaly_main)
 - [Installation instructions](#Installation-instructions)
   - [Prerequisites](#Prerequisites)
   - [App installation](#App-installation)
@@ -40,9 +45,9 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 ## Functionality ##
 There are several modules in the package. Each module has several functions.
 
-### Module: anomaly_libs module ###
+### Module: anomaly_libs ###
 
-### Module: anomaly_data_preprocessing module ###
+### Module: anomaly_data_preprocessing ###
 1. min\_samples = find\_min\_samples(df)
    - Definition: This function is used to find an hyperparameter for DBSCAN.
       - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
