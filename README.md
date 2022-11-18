@@ -193,14 +193,10 @@ There are several modules in the package. Each module has several functions.
      - models_dict is the Python dictionary of the models containing fit function, execution time, labels and parameters.
 ### Module anomaly_main ###
 1. find_parameters(self)
-   - Definition: This function is used to 
-   - Input Parameters: 
-   - Output: Returns  
+   - Definition: This function is used to provide parameters of all the models. 
 
 2. find_anomalies(self)
-   - Definition: This function is used to 
-   - Input Parameters: 
-   - Output: Returns  
+   - Definition: This function is used to find the model performance. 
    
 **Choice of hyperparameters:**
 1. Isolation Forest
