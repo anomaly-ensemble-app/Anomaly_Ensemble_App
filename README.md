@@ -51,118 +51,116 @@ There are several modules in the package. Each module has several functions.
 
 2. eps = find\_eps(df)
    - Definition: This function is used to find an hyperparameter for DBSCAN.
-     -- Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
+     - Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
    - Input Parameters: df is the dataset.
    - Output: Returns eps.
 
 3. p = find\_seasonal\_period(df)
    - Definition: This function is used to find an hyperparameter for Thymeboost.
-     -- Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
+     - Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
    - Input Parameters: df is the dataset.
    - Output: Returns seasonal\_period.
 
 4. output = detrend(df, id\_column, time\_column, time\_format):
    - Definition: This function is used to identify trend and then, detrend a time series.
-     -- Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
-     -- Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
+     - Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
+     - Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
    - Input Parameters: 
-     -- df is the dataset.
-     -- id\_column is the column over which the function will iterate.
-     -- time\_column is the datetime column.
-     -- time\_format is the datetime format of time\_column.
+     - df is the dataset.
+     - id\_column is the column over which the function will iterate.
+     - time\_column is the datetime column.
+     - time\_format is the datetime format of time\_column.
    - Output: Returns detrended time series.
 
 5.  output = deseasonalise(df, id_column, time_column, time_format)
    - Definition: This function is used to determine seasonality and then, deseasonlise a time series.
-     -- Determine seasonality: Autocorrelation function is used to check seasonality.
-     -- Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
+     - Determine seasonality: Autocorrelation function is used to check seasonality.
+     - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
    - Input Parameters: 
-     -- df is the dataset.
-     -- id\_column is the column over which the function will iterate.
-     -- time\_column is the datetime column.
-     -- time\_format is the datetime format of time\_column.
+     - df is the dataset.
+     - id\_column is the column over which the function will iterate.
+     - time\_column is the datetime column.
+     - time\_format is the datetime format of time\_column.
    - Output: Returns deseasonalised time series.
 
 6. (best\_nu, best\_kernel) = parameters_oc_svm(X, y, trials=10)
    - Definition: This function is used to hyperparameters for One Class SVM.
-     -- Find best\_nu & best\_kernel: Best optimal nu and kernal are found using Optuna hyperparameter optimization framework
+     - Find best\_nu & best\_kernel: Best optimal nu and kernal are found using Optuna hyperparameter optimization framework
    - Input Parameters: 
-     -- df is the dataset.
-     -- id\_column is the column over which the function will iterate.
-     -- time\_column is the datetime column.
-     -- time\_format is the datetime format of time\_column.
+     - df is the dataset.
+     - id\_column is the column over which the function will iterate.
+     - time\_column is the datetime column.
+     - time\_format is the datetime format of time\_column.
    - Output: Returns best\_nu and best\_kernel.
 
 ### Module: anomaly_models module ###
 1. ifo_labels = fit_iforest(X, \** kwargs)
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: Isolation forest is a decision tree based anomaly detection algorithm. 
+     - Model: Isolation forest is a decision tree based anomaly detection algorithm. 
                It isolates the outliers by randomly selecting a feature, and 
                then randomly selecting a split value between the max and min values of that feature.
-               It randomly selects a feature, and then randomly selects a split value from the max and min values of that feature.
+               It randomly selects a feature, and then randomly selects a split value from the max and min                  values of that feature.
                It isolates the outliers based on path length of the node/data point in the tree structure.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameter for Isolation Forest from a keyword-based Python dictionary.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameter for Isolation Forest from a keyword-based Python dictionary.
    - Output: Returns the anomaly labels.
    
 2. labels = fit_dbscan(X, \** kwargs)
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: DBSCAN is a density based anomaly detection algorithm. 
+     - Model: DBSCAN is a density based anomaly detection algorithm. 
                It groups together the points in clusters which are in high density regions,
                whereas the other points are marked as outliers.
-               It groups together the core points in clusters which are in high density regions, surrounded by border points.
+               It groups together the core points in clusters which are in high density regions, surrounded                  by border points.
                It marks the other points as outliers.
-     -- Prediction labels: Anomaly marked as -1 and normal as 1.
+     - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameters for DBSCAN, eps and min\_samples.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameters for DBSCAN, eps and min\_samples.
    - Output: Returns the anomaly labels.
    
  3. labels = fit_ThymeBoost(df, \** kwargs)
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: ThymeBoost is an anomaly detection algorithm which applies gradient boosting on time series decomposition.
-                It is a time series model for trend/seasonality/exogeneous estimation and decomposition using gradient boosting. 
-                It classifies a datapoint as outlier when it does not lie within the range of the fitted trend.
-     -- Prediction labels: Anomaly marked as -1 and normal as 1.
+     - Model: ThymeBoost is an anomaly detection algorithm which applies gradient boosting on time series                   decomposition.It is a time series model for trend/seasonality/exogeneous estimation and                       decomposition using gradient boosting. It classifies a datapoint as outlier when it does not                 lie within the range of the fitted trend.
+     - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameter for Thymeboost, seasonal\_period.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameter for Thymeboost, seasonal\_period.
    - Output: Returns the anomaly labels.
 
  4. labels = fit_oc_svm(df, \** kwargs)
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
+     - Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
                It finds a hyperplane that seperates the data set from the origin such that 
                the hyperplane is as close to the datapoints as possible. It fits a non-linear 
                boundary around the dense region of the data set separating the remaining points
                as outliers.
                It minimises the volume of the hypersphere that seperates the data points from the origin in the feature space. 
                It marks the data points outside the hypersphere as outliers.
-     -- Prediction labels: Anomaly marked as -1 and normal as 1.
+     - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameter for One Class SVM, best\_nu and best\_kernel.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameter for One Class SVM, best\_nu and best\_kernel.
    - Output: Returns the anomaly labels.
 
 5. labels = fit_lof(df, k):
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: Local outlier factor (LOF) is an anomaly detection algorithm.
+     - Model: Local outlier factor (LOF) is an anomaly detection algorithm.
                It computes the local density deviation of a data point with respect to its neighbors.
                It considers the data points that fall within a substantially lower density range than its neighbours as outliers.
-     -- Prediction labels: Anomaly marked as -1 and normal as 1.
+     - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameter for LOF, alg.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameter for LOF, alg.
    - Output: Returns the anomaly labels.
 
 6. labels = fit_tadgan(df, k):
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     -- Model: 
-     -- Prediction labels: Anomaly marked as -1 and normal as 1.
+     - Model: 
+     - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
-     -- X is the dataset.
-     -- \** kwargs takes the hyperparameter for tadgan, epochs.
+     - X is the dataset.
+     - \** kwargs takes the hyperparameter for tadgan, epochs.
    - Output: Returns the anomaly labels.
 
 ### Module: anomaly_detection module ###
