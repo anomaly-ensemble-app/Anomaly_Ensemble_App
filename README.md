@@ -61,7 +61,7 @@ There are several modules in the package. Each module has several functions.
    - Input Parameters: df is the dataset.
    - Output: Returns seasonal\_period.
 
-4. output = detrend(df, id\_column, time\_column, time\_format):
+4. output = detrend(df, id\_column, time\_column, time\_format)
    - Definition: This function is used to identify trend and then, detrend a time series.
      - Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
      - Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
@@ -72,16 +72,16 @@ There are several modules in the package. Each module has several functions.
      - time\_format is the datetime format of time\_column.
    - Output: Returns detrended time series.
 
-5.  output = deseasonalise(df, id_column, time_column, time_format)
-   - Definition: This function is used to determine seasonality and then, deseasonlise a time series.
-     - Determine seasonality: Autocorrelation function is used to check seasonality.
-     - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
-   - Input Parameters: 
-     - df is the dataset.
-     - id\_column is the column over which the function will iterate.
-     - time\_column is the datetime column.
-     - time\_format is the datetime format of time\_column.
-   - Output: Returns deseasonalised time series.
+5.  output = deseasonalise(df, id\_column, time\_column, time\_format)
+    - Definition: This function is used to determine seasonality and then, deseasonlise a time series.
+       - Determine seasonality: Autocorrelation function is used to check seasonality.
+       - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
+    - Input Parameters: 
+      - df is the dataset.
+      - id\_column is the column over which the function will iterate.
+      - time\_column is the datetime column.
+      - time\_format is the datetime format of time\_column.
+    - Output: Returns deseasonalised time series.
 
 6. (best\_nu, best\_kernel) = parameters_oc_svm(X, y, trials=10)
    - Definition: This function is used to hyperparameters for One Class SVM.
@@ -120,28 +120,28 @@ There are several modules in the package. Each module has several functions.
    - Output: Returns the anomaly labels.
    
  3. labels = fit_ThymeBoost(df, \** kwargs)
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     - Model: ThymeBoost is an anomaly detection algorithm which applies gradient boosting on time series                   decomposition.It is a time series model for trend/seasonality/exogeneous estimation and                       decomposition using gradient boosting. It classifies a datapoint as outlier when it does not                 lie within the range of the fitted trend.
-     - Prediction labels: Anomaly marked as -1 and normal as 1.
-   - Input Parameters: 
-     - X is the dataset.
-     - \** kwargs takes the hyperparameter for Thymeboost, seasonal\_period.
-   - Output: Returns the anomaly labels.
+    - Definition: This function is used to fit a model to the data and predict anomaly labels.
+      - Model: ThymeBoost is an anomaly detection algorithm which applies gradient boosting on time series                   decomposition.It is a time series model for trend/seasonality/exogeneous estimation and                       decomposition using gradient boosting. It classifies a datapoint as outlier when it does not                 lie within the range of the fitted trend.
+      - Prediction labels: Anomaly marked as -1 and normal as 1.
+    - Input Parameters: 
+      - X is the dataset.
+      - \** kwargs takes the hyperparameter for Thymeboost, seasonal\_period.
+    - Output: Returns the anomaly labels.
 
  4. labels = fit_oc_svm(df, \** kwargs)
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
-     - Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
+    - Definition: This function is used to fit a model to the data and predict anomaly labels.
+      - Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
                It finds a hyperplane that seperates the data set from the origin such that 
                the hyperplane is as close to the datapoints as possible. It fits a non-linear 
                boundary around the dense region of the data set separating the remaining points
                as outliers.
                It minimises the volume of the hypersphere that seperates the data points from the origin in the feature space. 
                It marks the data points outside the hypersphere as outliers.
-     - Prediction labels: Anomaly marked as -1 and normal as 1.
-   - Input Parameters: 
-     - X is the dataset.
-     - \** kwargs takes the hyperparameter for One Class SVM, best\_nu and best\_kernel.
-   - Output: Returns the anomaly labels.
+      - Prediction labels: Anomaly marked as -1 and normal as 1.
+    - Input Parameters: 
+      - X is the dataset.
+      - \** kwargs takes the hyperparameter for One Class SVM, best\_nu and best\_kernel.
+    - Output: Returns the anomaly labels.
 
 5. labels = fit_lof(df, k):
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
