@@ -169,7 +169,15 @@ There are several modules in the package. Each module has several functions.
    - Output: Returns the anomaly labels.
 
 ### Module anomaly_detection ###
-
+1. voters = election(voters, n_voters, threshold)
+   - Definition: This function is used to find the final anomaly labels of the ensemble method.
+     - Model: Ensemble method is a tree based anomaly detection method. It identifies outliers based on majority voting logic. If the average predicted data point of all the models is above a certain threshold, then it is marked as an outlier.
+     - Prediction labels: Anomaly marked as 1 and normal as 0.
+   - Input Parameters: 
+     - voters
+     - n_voters
+     - threshold 
+   - Output: Returns the anomaly labels. 
 ### Module anomaly_main ###
 
 **Choice of hyperparameters:**
