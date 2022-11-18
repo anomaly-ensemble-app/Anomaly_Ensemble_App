@@ -188,10 +188,19 @@ There are several modules in the package. Each module has several functions.
      - X is the dataset.
      - \** kwargs
    - Output: Returns the anomaly labels. 
-     - election_results
-     - models_dict
+     - election_results is the datframe with predicted labels of all models. 
+     - models_dict is the Python dictionary of the models containing fit function, execution time, labels and parameters.
 ### Module anomaly_main ###
+1. find_parameters(self)
+   - Definition: This function is used to 
+   - Input Parameters: 
+   - Output: Returns  
 
+2. find_anomalies(self)
+   - Definition: This function is used to 
+   - Input Parameters: 
+   - Output: Returns  
+   
 **Choice of hyperparameters:**
 1. Isolation Forest
     - contamination = Percentage of expected outliers.
