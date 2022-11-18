@@ -223,13 +223,13 @@ The package consists of several modules and each module contains several functio
 
 6. TADGAN
     - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
-
-
+    
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
-2. comments disappeared in code.
-
-
+2. comments in code.
+3. detrend and deseasonalize.
+4. execution time.
+5. ensemble method labels and performance metrics.
 
 ## Installation instructions ##
 
