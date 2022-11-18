@@ -45,6 +45,7 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 ## Functionality ##
 There are several modules in the package. Each module has several functions.
+<img src="package_structure.png" width="500" height="400">
 
 ### Module anomaly_libs ###
 
