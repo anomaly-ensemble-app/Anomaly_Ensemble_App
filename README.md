@@ -8,7 +8,7 @@
   - [Features](#Features)
   - [Target audience](#Target-audience)
 - [Functionality](#Functionality)
-  - [Module anomaly_libs](#Module anomaly_libs)
+  - [Module anomaly_libs](#Module-anomaly_libs)
   - [Module anomaly_data_preprocessing](#Module-anomaly_data_preprocessing)
   - [Module anomaly_models](#Module-anomaly_models)
   - [Module anomaly_detection](#Module-anomaly_detection)
@@ -45,9 +45,9 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 ## Functionality ##
 There are several modules in the package. Each module has several functions.
 
-### Module: anomaly_libs ###
+### Module anomaly_libs ###
 
-### Module: anomaly_data_preprocessing ###
+### Module anomaly_data_preprocessing ###
 1. min\_samples = find\_min\_samples(df)
    - Definition: This function is used to find an hyperparameter for DBSCAN.
       - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
@@ -98,7 +98,7 @@ There are several modules in the package. Each module has several functions.
      - time\_format is the datetime format of time\_column.
    - Output: Returns best\_nu and best\_kernel.
 
-### Module: anomaly_models module ###
+### Module anomaly_models ###
 1. ifo_labels = fit_iforest(X, \** kwargs)
    - Definition: This function is used to fit a model to the data and predict anomaly labels.
      - Model: Isolation forest is a decision tree based anomaly detection algorithm. 
@@ -168,9 +168,9 @@ There are several modules in the package. Each module has several functions.
      - \** kwargs takes the hyperparameter for tadgan, epochs.
    - Output: Returns the anomaly labels.
 
-### Module: anomaly_detection module ###
+### Module anomaly_detection ###
 
-### Module: anomaly_main module ###
+### Module anomaly_main ###
 
 **Choice of hyperparameters:**
 1. Isolation Forest
