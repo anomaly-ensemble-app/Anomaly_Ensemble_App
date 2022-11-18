@@ -175,9 +175,9 @@ There are several modules in the package. Each module has several functions.
      - Model: Ensemble method is a tree based anomaly detection method. It identifies outliers based on majority voting logic. If the average predicted data point of all the models is above a certain threshold, then it is marked as an outlier.
      - Prediction labels: Anomaly marked as 1 and normal as 0.
    - Input Parameters: 
-     - voters
-     - n_voters
-     - threshold 
+     - voters is the dataframe that contains prediction columns of all models that are fit for the run.
+     - n_voters is the number of models that are fit for the run.
+     - threshold is the limit above which a datapoint is considered an outlier.
    - Output: Returns the anomaly labels. 
 
 2. (election_results, models_dict) = get_labels(X, \** kwargs)
@@ -185,7 +185,7 @@ There are several modules in the package. Each module has several functions.
      - Model: 
      - Prediction labels: Anomaly marked as 1 and normal as 0.
    - Input Parameters: 
-     - X
+     - X is the dataset.
      - \** kwargs
    - Output: Returns the anomaly labels. 
      - election_results
