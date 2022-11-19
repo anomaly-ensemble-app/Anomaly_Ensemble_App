@@ -230,6 +230,7 @@ The package consists of several modules and each module contains several functio
 3. detrend and deseasonalize.
 4. execution time.
 5. ensemble method labels and performance metrics.
+6. results without true outliers.
 
 ## Installation instructions ##
 
@@ -249,6 +250,11 @@ Use exemplary datasets
 ### Code ###
 
 ```from anomaly_ensemble_app.anomaly_main import *```
+```import pandas as pd
+original_data = "syntethic_original.csv"
+original_DF = pd.read_csv(original_data, sep=";")
+anomaly_detection_obj = AnomalyDetection(original_DF, 'spare_part_id', 'yyyymm', '%Y%m', models=["full"])
+anomaly_detection_labels.performance_DF```
 
 ## Community guidelines ##
 
