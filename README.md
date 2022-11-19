@@ -251,9 +251,9 @@ Use exemplary datasets
 
 ```from anomaly_ensemble_app.anomaly_main import *
    import pandas as pd
-   original_data = "syntethic_original.csv"
-   original_DF = pd.read_csv(original_data, sep=";")
-   anomaly_detection_obj = AnomalyDetection(original_DF, 'spare_part_id', 'yyyymm', '%Y%m', models=["full"])
+   original_data = \"syntethic_original.csv\"
+   original_DF = pd.read_csv(original_data, sep=\";\")
+   anomaly_detection_obj = AnomalyDetection(original_DF, \'spare_part_id\', \'yyyymm\', \'%Y%m\', models=[\"full\"])
    anomaly_detection_labels.performance_DF```
 
 ## Community guidelines ##
