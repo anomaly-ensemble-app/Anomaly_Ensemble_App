@@ -54,8 +54,11 @@ The package consists of several modules and each module contains several functio
 <img src="package_structure.png" width="500" height="400">
 
 ### Module anomaly_libs ###
+This module contains all the needed python libraries required to run the package.
 
 ### Module anomaly_data_preprocessing ###
+This module contains the data preprocessing tasks which includes detrending and deseasonalising the time series, as well as finding optimal hyperparameters for the models.
+
 1. min\_samples = find\_min\_samples(df)
    - Definition: This function is used to find an hyperparameter for DBSCAN.
       - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
@@ -107,8 +110,10 @@ The package consists of several modules and each module contains several functio
    - Output: Returns best\_nu and best\_kernel.
 
 ### Module anomaly_models ###
-1. ifo_labels = fit_iforest(X, \** kwargs)
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
+This module contains the models which are to be fitted on the data and hence used in anomaly prediction.
+
+1. ifo\_labels = fit_iforest(X, \** kwargs)
+   - Definition: This function is used to fit isolation forest model to the data and predict anomaly labels.
      - Model: Isolation forest is a decision tree based anomaly detection algorithm. 
                It isolates the outliers by randomly selecting a feature, and 
                then randomly selecting a split value between the max and min values of that feature.
@@ -119,8 +124,8 @@ The package consists of several modules and each module contains several functio
      - \** kwargs takes the hyperparameter for Isolation Forest from a keyword-based Python dictionary.
    - Output: Returns the anomaly labels.
    
-2. labels = fit_dbscan(X, \** kwargs)
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
+2. dbscan\_labels = fit_dbscan(X, \** kwargs)
+   - Definition: This function is used to fit dbscan model to the data and predict anomaly labels.
      - Model: DBSCAN is a density based anomaly detection algorithm. 
                It groups together the points in clusters which are in high density regions,
                whereas the other points are marked as outliers.
@@ -132,8 +137,8 @@ The package consists of several modules and each module contains several functio
      - \** kwargs takes the hyperparameters for DBSCAN, eps and min\_samples.
    - Output: Returns the anomaly labels.
    
- 3. labels = fit_ThymeBoost(df, \** kwargs)
-    - Definition: This function is used to fit a model to the data and predict anomaly labels.
+ 3. tb\_labels = fit_ThymeBoost(df, \** kwargs)
+    - Definition: This function is used to fit thymeboost model to the data and predict anomaly labels.
       - Model: ThymeBoost is an anomaly detection algorithm which applies gradient boosting on time series                   decomposition.It is a time series model for trend/seasonality/exogeneous estimation and                       decomposition using gradient boosting. It classifies a datapoint as outlier when it does not                 lie within the range of the fitted trend.
       - Prediction labels: Anomaly marked as -1 and normal as 1.
     - Input Parameters: 
@@ -141,8 +146,8 @@ The package consists of several modules and each module contains several functio
       - \** kwargs takes the hyperparameter for Thymeboost, seasonal\_period.
     - Output: Returns the anomaly labels.
 
- 4. labels = fit_oc_svm(df, \** kwargs)
-    - Definition: This function is used to fit a model to the data and predict anomaly labels.
+ 4. ocsvm\_labels = fit_oc_svm(df, \** kwargs)
+    - Definition: This function is used to fit one-class svm model to the data and predict anomaly labels.
       - Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
                It finds a hyperplane that seperates the data set from the origin such that 
                the hyperplane is as close to the datapoints as possible. It fits a non-linear 
@@ -156,8 +161,8 @@ The package consists of several modules and each module contains several functio
       - \** kwargs takes the hyperparameter for One Class SVM, best\_nu and best\_kernel.
     - Output: Returns the anomaly labels.
 
-5. labels = fit_lof(df, k):
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
+5. lof\_labels = fit_lof(df, k):
+   - Definition: This function is used to fit lof model to the data and predict anomaly labels.
      - Model: Local outlier factor (LOF) is an anomaly detection algorithm.
                It computes the local density deviation of a data point with respect to its neighbors.
                It considers the data points that fall within a substantially lower density range than its neighbours as outliers.
@@ -167,8 +172,8 @@ The package consists of several modules and each module contains several functio
      - \** kwargs takes the hyperparameter for LOF, alg.
    - Output: Returns the anomaly labels.
 
-6. labels = fit_tadgan(df, k):
-   - Definition: This function is used to fit a model to the data and predict anomaly labels.
+6. tadgan\_labels = fit_tadgan(df, k):
+   - Definition: This function is used to fit tadgan model to the data and predict anomaly labels.
      - Model: 
      - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
@@ -177,6 +182,8 @@ The package consists of several modules and each module contains several functio
    - Output: Returns the anomaly labels.
 
 ### Module anomaly_detection ###
+This module contains the majority vote algorithm.
+
 1. voters = election(voters, n_voters, threshold)
    - Definition: This function is used to find the final anomaly labels of the ensemble method.
      - Model: Ensemble method is a tree based anomaly detection method. It identifies outliers based on majority voting logic. If the average predicted data point of all the models is above a certain threshold, then it is marked as an outlier.
@@ -197,32 +204,18 @@ The package consists of several modules and each module contains several functio
    - Output: Returns the anomaly labels. 
      - election_results is the datframe with predicted labels of all models. 
      - models_dict is the Python dictionary of the models containing fit function, execution time, labels and parameters.
+     
 ### Module anomaly_main ###
+This module contains the results to be displayed.
+
 1. find_parameters(self)
    - Definition: This function is used to provide parameters of all the models. 
 
 2. find_anomalies(self)
    - Definition: This function is used to find the model performance. 
    
-**Choice of hyperparameters:**
-1. Isolation Forest
-    - contamination = Percentage of expected outliers.
-
-2. DBSCAN 
-    - min_samples: For n-dimensional data, min_samples = 2\*n, where n = the dimensionlity of the data.
-    - eps: eps = the point of maximum curvature of the k-NN distance graph.
-  
-3. ThymeBoost
-    - seasonal_period: seasonal_period = first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
-
-4. One-Class Support Vector Machine
-    - kernel: Best optimal kernal using Optuna hyperparameter optimization framework.
-
-5. Local Outlier Factor
-    - alg: Best optimal algorithm using Optuna hyperparameter optimization framework.
-
-6. TADGAN
-    - epochs: Best optimal epoch using Orion hyperparameter optimization framework.
+**Input parameters:**
+1. 
     
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
