@@ -222,8 +222,9 @@ This module contains the results to be displayed.
 2. comments in code.
 3. detrend and deseasonalize.
 4. execution time.
-5. ensemble method labels and performance metrics.
-6. results without true outliers.
+5. ensemble method - labels and performance metrics.
+6. results without true outliers-unlabelled data.
+7. diff between the methods and applications for each method.
 
 ## Installation instructions ##
 
