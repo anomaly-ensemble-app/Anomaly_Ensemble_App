@@ -219,12 +219,13 @@ This module contains the results to be displayed.
     
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
-2. comments in code.
-3. detrend and deseasonalize.
-4. execution time.
-5. ensemble method - labels and performance metrics.
-6. results without true outliers-unlabelled data.
-7. diff between the methods and applications for each method.
+2. comments in code.vadim
+3. detrend and deseasonalize.-not applied vadim
+4. execution time.- not display in results vadim
+5. suggested parameters and user's choice.devosmita
+6. results without true outliers-unlabelled data.devosmita
+7. diff between the methods and applications for each method.devosmita
+8. multivariate
 
 ## Installation instructions ##
 
