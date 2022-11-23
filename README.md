@@ -36,12 +36,13 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 <img src="Anomaly_Ensemble_App.png" width="800" height="500">
 
 ### Features ###
-1. Handles time series data.
-2. Deals with trends and seasonality.
-3. Provides options to choose anomaly detection models for ensemble learning.
-4. Suggests hyperparameters for each anomaly detection model.
-4. Provides execution time for each anomaly detection model.
-6. Provides more accurate anomaly predictions. 
+1. Works well when the underlying data distribution is unknown.
+2. Handles time series data.
+3. Deals with trends and seasonality.
+4. Provides options to choose anomaly detection models for ensemble learning.
+5. Suggests hyperparameters for each anomaly detection model.
+6. Provides execution time for each anomaly detection model.
+7. Provides more accurate anomaly predictions. 
 
 ### Target audience ###
 Anomaly_Ensemble_App should be of interest to readers who are involved in outlier detection for time series data.
