@@ -148,11 +148,11 @@ This module contains the models which are to be fitted on the data and hence use
  4. ocsvm\_labels = fit_oc_svm(df, \** kwargs)
     - Definition: This function is used to fit one-class svm model to the data and predict anomaly labels.
       - Model: One-Class Support Vector Machine (SVM) is an anomaly detection algorithm. 
-               It finds a hyperplane that seperates the data set from the origin such that 
+               It finds a hyperplane that separates the data set from the origin such that 
                the hyperplane is as close to the datapoints as possible. It fits a non-linear 
                boundary around the dense region of the data set separating the remaining points
                as outliers.
-               It minimises the volume of the hypersphere that seperates the data points from the origin in the feature space. 
+               It minimizes the volume of the hypersphere that separates the data points from the origin in the feature space. 
                It marks the data points outside the hypersphere as outliers.
       - Prediction labels: Anomaly marked as -1 and normal as 1.
     - Input Parameters: 
@@ -164,7 +164,7 @@ This module contains the models which are to be fitted on the data and hence use
    - Definition: This function is used to fit lof model to the data and predict anomaly labels.
      - Model: Local outlier factor (LOF) is an anomaly detection algorithm.
                It computes the local density deviation of a data point with respect to its neighbors.
-               It considers the data points that fall within a substantially lower density range than its neighbours as outliers.
+               It considers the data points that fall within a substantially lower density range than its neighbors as outliers.
      - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
      - X is the dataset.
