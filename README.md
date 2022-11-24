@@ -128,9 +128,7 @@ This module contains the models which are to be fitted on the data and hence use
 2. dbscan\_labels = fit_dbscan(X, \** kwargs)
    - Definition: This function is used to fit dbscan model to the data and predict anomaly labels.
      - Model: DBSCAN is a density based anomaly detection algorithm. 
-               It groups together the points in clusters which are in high density regions,
-               whereas the other points are marked as outliers.
-               It groups together the core points in clusters which are in high density regions, surrounded                  by border points.
+               It groups together the core points in clusters which are in high density regions, surrounded by border points.
                It marks the other points as outliers.
      - Prediction labels: Anomaly marked as -1 and normal as 1.
    - Input Parameters: 
