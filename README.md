@@ -55,30 +55,12 @@ The package consists of several modules and each module contains several functio
 <img src="package_structure.png" width="500" height="400">
 
 ### Module anomaly_libs ###
-This module contains all the needed python libraries required to run the package.
+This module imports all the needed python libraries that are required to run the package.
 
 ### Module anomaly_data_preprocessing ###
 This module contains the data preprocessing tasks which includes detrending and deseasonalising the time series, as well as finding optimal hyperparameters for the models.
 
-1. min\_samples = find\_min\_samples(df)
-   - Definition: This function is used to find an hyperparameter for DBSCAN.
-      - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
-   - Input Parameters: df is the dataset.
-   - Output: Returns min\_samples.
-
-2. eps = find\_eps(df)
-   - Definition: This function is used to find an hyperparameter for DBSCAN.
-     - Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
-   - Input Parameters: df is the dataset.
-   - Output: Returns eps.
-
-3. p = find\_seasonal\_period(df)
-   - Definition: This function is used to find an hyperparameter for Thymeboost.
-     - Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
-   - Input Parameters: df is the dataset.
-   - Output: Returns seasonal\_period.
-
-4. output = detrend(df, id\_column, time\_column, time\_format)
+1. output = detrend(df, id\_column, time\_column, time\_format)
    - Definition: This function is used to identify trend and then, detrend a time series.
      - Identify trend: Augmented Dickey Fuller Test (ADF test) is used to capture trend of the time series.
      - Detrend: 'detrend' function is used from the 'scipy' module for detrending the time series.
@@ -89,7 +71,7 @@ This module contains the data preprocessing tasks which includes detrending and 
      - time\_format is the datetime format of time\_column.
    - Output: Returns detrended time series.
 
-5.  output = deseasonalise(df, id\_column, time\_column, time\_format)
+2.  output = deseasonalise(df, id\_column, time\_column, time\_format)
     - Definition: This function is used to determine seasonality and then, deseasonlise a time series.
        - Determine seasonality: Autocorrelation function is used to check seasonality.
        - Deseasonalise: 'seasonal_decompose' function is used from the 'statsmodel' module for deseasonalising the time series.
@@ -99,6 +81,24 @@ This module contains the data preprocessing tasks which includes detrending and 
       - time\_column is the datetime column.
       - time\_format is the datetime format of time\_column.
     - Output: Returns deseasonalised time series.
+    
+3. min\_samples = find\_min\_samples(df)
+   - Definition: This function is used to find an hyperparameter for DBSCAN.
+      - Find min\_samples: min\_samples is chosen as 2\*n, where n = the dimensionlity of the data.
+   - Input Parameters: df is the dataset.
+   - Output: Returns min\_samples.
+
+4. eps = find\_eps(df)
+   - Definition: This function is used to find an hyperparameter for DBSCAN.
+     - Find eps: eps is chosen as the point of maximum curvature of the k-NN distance graph.
+   - Input Parameters: df is the dataset.
+   - Output: Returns eps.
+
+5. p = find\_seasonal\_period(df)
+   - Definition: This function is used to find an hyperparameter for Thymeboost.
+     - Find p: seasonal\_period is chosen as the first expected seasonal period at the maximum amplitude, computed using Fast Fourier Transform.
+   - Input Parameters: df is the dataset.
+   - Output: Returns seasonal\_period.
 
 6. (best\_nu, best\_kernel) = parameters_oc_svm(X, y, trials=10)
    - Definition: This function is used to hyperparameters for One Class SVM.
