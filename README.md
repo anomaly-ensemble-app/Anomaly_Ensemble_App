@@ -214,7 +214,7 @@ This module contains the results to be displayed.
    - Definition: This function is used to find the model performance. 
    
 **Input parameters:**
-1. 
+
     
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
@@ -250,6 +250,7 @@ original_data = "syntethic_original.csv"
 original_DF = pd.read_csv(original_data, sep=";")
 anomaly_detection_obj = AnomalyDetection(original_DF, 'spare_part_id', 'yyyymm', '%Y%m', models=["full"])
 anomaly_detection_labels.performance_DF 
+anomaly_detection_labels.final_df
 ```
 
 ## Community guidelines ##
