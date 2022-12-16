@@ -225,6 +225,9 @@ This module contains the results to be displayed.
 6. results without true outliers-unlabelled data.devosmita
 7. diff between the methods and applications for each method.devosmita
 8. multivariate
+9. contamination for lof
+10. enable tadgan
+11. Add weight for models
 
 ## Installation instructions ##
 
