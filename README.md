@@ -218,18 +218,11 @@ This module contains the results to be displayed.
     
 **Not implemented yet:**
 1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
-2. comments in code.vadim done
-3. detrend and deseasonalize.-not applied vadim not done
-4. execution time.- not display in results vadim 
-5. suggested parameters and user's choice.devosmita
-6. results without true outliers-unlabelled data.devosmita
-7. diff between the methods and applications for each method.devosmita'
-8. contamination for lof Vadim
-9. enable tadgan Vadim
-10. Check performance matrix with user parameters. Devosmita
-11. Implement CO2 emission.
-12. Add weight for models Extra
-13. multivariate Devosmita
+2. models not work with suggested/user parameters.devosmita
+3. enable tadgan. Vadim
+4. Implement CO2 emission. Vadim
+5. Add weight for model voting Extra
+6. multivariate Devosmita
 
 ## Installation instructions ##
 
