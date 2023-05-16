@@ -216,8 +216,9 @@ This module contains the results to be displayed.
 **Input parameters:**
 
 **Accuracy:**
-| Header 1 | Header 2 | Header 3 |
-| -------- | -------- | -------- |
+|   | Anomaly | Non Anomaly |
+| Anomaly | -------- | -------- |
+| Non Anomaly | -------- | -------- |
 
 
 ## Installation instructions ##
