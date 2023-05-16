@@ -218,11 +218,11 @@ This module contains the results to be displayed.
 **Accuracy:**
 
 
-|             |            |Predicted  |             |
-| :-------    | :-------   | :------:  | -------:    |
-|             |            | Anomaly   | Non Anomaly |
-| **Actual**  | Anomaly    |   Cell    |    Right    |
-|             | Non Anomaly|  Center   |     Align   |
+|             |              |Predicted Class  |             |
+| :-------    | :-------     | :------:  | -------:    |
+|             |              | *Anomaly*   | *Non Anomaly* |
+| **Actual Class**  | *Anomaly*    |   True Positive    |    False Negative    |
+|             | *Non Anomaly*|  False Positive   |     True Negative   |
 
 
 
