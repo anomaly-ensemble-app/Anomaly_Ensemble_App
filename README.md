@@ -216,16 +216,12 @@ This module contains the results to be displayed.
 **Input parameters:**
 
 **Accuracy:**
-|   | Anomaly | Non Anomaly |
-| Anomaly | -------- | -------- |
-| Non Anomaly | -------- | -------- |
 
-| Header 1 | Header 2 | Header 3 |
-| :------- | :------: | -------: |
-| Content 1 | Anomaly | Non Anomaly |
-| --------- | :-------: | --------: |
-| Anomaly     |   Cell    |    Right |
-| Non Anomaly     |  Center   |     Align|
+
+|             |            |Actual     |             |
+|             |            | Anomaly   | Non Anomaly |
+| Predicted   | Anomaly    |   Cell    |    Right    |
+|             | Non Anomaly|  Center   |     Align   |
 
 
 
