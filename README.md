@@ -220,6 +220,14 @@ This module contains the results to be displayed.
 | Anomaly | -------- | -------- |
 | Non Anomaly | -------- | -------- |
 
+| Header 1 | Header 2 | Header 3 |
+| :------- | :------: | -------: |
+| Content 1 | Content 2 | Content 3 |
+| --------- | :-------: | --------: |
+| Row 1     |   Cell    |    Right |
+| Row 2     |  Center   |     Align|
+| Row 3     |    Text   |   Here   |
+
 
 ## Installation instructions ##
 
