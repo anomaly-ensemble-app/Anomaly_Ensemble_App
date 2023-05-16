@@ -36,10 +36,10 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 **Accuracy Metrics**
 A confusion matrix consists of different combinations of predicted and actual labels.
-- True Positive (TP): 
-- True Negative (TN):
-- False Positive (FP):
-- False Negative (FN): 
+- True Positive (TP): Number of instances correctly classified as anomaly by the model. A high value indicates that the model is accurately identifying anomalies.
+- True Negative (TN): Number of instances correctly classified as non anomaly by the model. A high value indicates that the model is accurately identifying non-anomalies.
+- False Positive (FP): Number of instances incorrectly classified as anomaly by the model. A high value indicates that the model is producing a large number of false alarms.
+- False Negative (FN): Number of instances incorrectly classified as non anomaly by the model. A high value indicates that the model is failing to detect many anomalies.
 
 |             |              |Predicted Class  |             |
 | :-------    | :-------     | :------:  | -------:    |
@@ -47,15 +47,12 @@ A confusion matrix consists of different combinations of predicted and actual la
 | **Actual Class**  | *Anomaly*    |   True Positive    |    False Negative    |
 |             | *Non Anomaly*|  False Positive   |     True Negative   |
 
-The confusion matrix helps to calculate several important metrics that is used to evaluate anomaly detection models:
+The confusion matrix helps to calculate important metrics that is used to evaluate anomaly detection models:
 
 - Accuracy: It measures the overall correctness of the model's predictions, calculated as (TP + TN) / (TP + TN + FP + FN).
-
 - Precision: It quantifies the proportion of correctly predicted anomalies out of all predicted anomalies, calculated as TP / (TP + FP).
-
-- Recall (also known as sensitivity or true positive rate): It represents the proportion of correctly predicted anomalies out of all true anomalies, calculated as TP / (TP + FN).
-
-- F1 score: It combines precision and recall into a single metric that balances both measures, calculated as 2 * (precision * recall) / (precision + recall).
+- Recall/Sensitivity: It represents the proportion of correctly predicted anomalies out of all actual anomalies, calculated as TP / (TP + FN).
+- F1 score: It combines precision and recall into a single metric that is used in case of imbalanced classes (for eg, less anomalies and more non anomalies), calculated as 2 * (precision * recall) / (precision + recall).
 
 ### Features ###
 1. Works well when the underlying data distribution is unknown.
