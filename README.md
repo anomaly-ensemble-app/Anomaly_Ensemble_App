@@ -1,7 +1,6 @@
 # Anomaly_Ensemble_App
 
 ![PyPI](https://img.shields.io/pypi/v/anomaly-ensemble-app?label=pypi%20package) 
-![CI](https://github.com/devosmitachatterjee2018/Anomaly_Ensemble_App/actions/workflows/ci.yml/badge.svg)
 
 ## Table of contents ##
 - [A statement of need](#A-statement-of-need)
@@ -34,6 +33,29 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 **Process Flow Diagram:**
 
 <img src="Anomaly_Ensemble_App.png" width="800" height="500">
+
+**Accuracy Metrics**
+A confusion matrix consists of different combinations of predicted and actual labels.
+- True Positive (TP): 
+- True Negative (TN):
+- False Positive (FP):
+- False Negative (FN): 
+
+|             |              |Predicted Class  |             |
+| :-------    | :-------     | :------:  | -------:    |
+|             |              | *Anomaly*   | *Non Anomaly* |
+| **Actual Class**  | *Anomaly*    |   True Positive    |    False Negative    |
+|             | *Non Anomaly*|  False Positive   |     True Negative   |
+
+The confusion matrix helps to calculate several important metrics that is used to evaluate anomaly detection models:
+
+- Accuracy: It measures the overall correctness of the model's predictions, calculated as (TP + TN) / (TP + TN + FP + FN).
+
+- Precision: It quantifies the proportion of correctly predicted anomalies out of all predicted anomalies, calculated as TP / (TP + FP).
+
+- Recall (also known as sensitivity or true positive rate): It represents the proportion of correctly predicted anomalies out of all true anomalies, calculated as TP / (TP + FN).
+
+- F1 score: It combines precision and recall into a single metric that balances both measures, calculated as 2 * (precision * recall) / (precision + recall).
 
 ### Features ###
 1. Works well when the underlying data distribution is unknown.
@@ -215,14 +237,7 @@ This module contains the results to be displayed.
    
 **Input parameters:**
 
-**Accuracy:**
 
-
-|             |              |Predicted Class  |             |
-| :-------    | :-------     | :------:  | -------:    |
-|             |              | *Anomaly*   | *Non Anomaly* |
-| **Actual Class**  | *Anomaly*    |   True Positive    |    False Negative    |
-|             | *Non Anomaly*|  False Positive   |     True Negative   |
 
 
 
