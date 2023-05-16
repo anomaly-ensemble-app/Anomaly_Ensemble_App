@@ -218,10 +218,10 @@ This module contains the results to be displayed.
 **Accuracy:**
 
 
-|             |            |Actual     |             |
+|             |            |Predicted  |             |
 | :-------    | :-------   | :------:  | -------:    |
 |             |            | Anomaly   | Non Anomaly |
-| Predicted   | Anomaly    |   Cell    |    Right    |
+| **Actual**  | Anomaly    |   Cell    |    Right    |
 |             | Non Anomaly|  Center   |     Align   |
 
 
