@@ -222,11 +222,11 @@ This module contains the results to be displayed.
 
 | Header 1 | Header 2 | Header 3 |
 | :------- | :------: | -------: |
-| Content 1 | Content 2 | Content 3 |
+| Content 1 | Anomaly | Non Anomaly |
 | --------- | :-------: | --------: |
-| Row 1     |   Cell    |    Right |
-| Row 2     |  Center   |     Align|
-| Row 3     |    Text   |   Here   |
+| Anomaly     |   Cell    |    Right |
+| Non Anomaly     |  Center   |     Align|
+
 
 
 ## Installation instructions ##
