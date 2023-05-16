@@ -215,14 +215,10 @@ This module contains the results to be displayed.
    
 **Input parameters:**
 
-    
-**Not implemented yet:**
-1. 95% confidence interval (+-1.96/sqrt(n)) for autocorr
-2. 
-3. enable tadgan. Vadim
-4. Implement CO2 emission. Vadim
-5. Add weight for model voting Extra
-6. multivariate Devosmita
+**Accuracy:**
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+
 
 ## Installation instructions ##
 
