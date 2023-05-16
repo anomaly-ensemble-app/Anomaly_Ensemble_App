@@ -34,7 +34,8 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 <img src="Anomaly_Ensemble_App.png" width="800" height="500">
 
-**Accuracy Metrics**
+**Performance Metrics**
+
 A confusion matrix consists of different combinations of predicted and actual labels.
 - True Positive (TP): Number of instances correctly classified as anomaly by the model. A high value indicates that the model is accurately identifying anomalies.
 - True Negative (TN): Number of instances correctly classified as non anomaly by the model. A high value indicates that the model is accurately identifying non-anomalies.
