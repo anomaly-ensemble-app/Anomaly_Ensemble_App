@@ -36,7 +36,7 @@ Anomaly_Ensemble_App is an anomaly detection python library that is based on the
 
 **Performance Metrics**
 
-A confusion matrix consists of different combinations of predicted and actual anomaly labels.
+A confusion matrix is used to evaluate anomaly detection models. It consists of different combinations of predicted and actual anomaly labels.
 - True Positive (TP): Number of instances correctly classified as anomaly by the model. A high value indicates that the model is accurately identifying anomalies.
 - True Negative (TN): Number of instances correctly classified as non anomaly by the model. A high value indicates that the model is accurately identifying non-anomalies.
 - False Positive (FP): Number of instances incorrectly classified as anomaly by the model. A high value indicates that the model is producing a large number of false alarms.
@@ -48,7 +48,7 @@ A confusion matrix consists of different combinations of predicted and actual an
 | **Actual Class**  | *Anomaly*    |   True Positive    |    False Negative    |
 |             | *Non Anomaly*|  False Positive   |     True Negative   |
 
-The confusion matrix helps to calculate important metrics that is used to evaluate anomaly detection models:
+The confusion matrix helps to calculate important performance metrics:
 
 - Accuracy: It measures the overall correctness of the model's predictions, calculated as (TP + TN) / (TP + TN + FP + FN).
 - Precision: It quantifies the proportion of correctly predicted anomalies out of all predicted anomalies, calculated as TP / (TP + FP).
