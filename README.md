@@ -40,7 +40,7 @@ A confusion matrix consists of different combinations of predicted and actual an
 - True Positive (TP): Number of instances correctly classified as anomaly by the model. A high value indicates that the model is accurately identifying anomalies.
 - True Negative (TN): Number of instances correctly classified as non anomaly by the model. A high value indicates that the model is accurately identifying non-anomalies.
 - False Positive (FP): Number of instances incorrectly classified as anomaly by the model. A high value indicates that the model is producing a large number of false alarms.
-- False Negative (FN): Number of instances incorrectly classified as non anomaly by the model. A high value indicates that the model is failing to detect many anomalies.
+- False Negative (FN): Number of instances incorrectly classified as non anomaly by the model. A high value indicates that the model is failing to detect anomalies.
 
 |             |              |Predicted Class  |             |
 | :-------    | :-------     | :------:  | -------:    |
