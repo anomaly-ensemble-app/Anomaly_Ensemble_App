@@ -257,19 +257,23 @@ Use exemplary datasets
 ### Code ###
 
 ```
-#%% Import libaries
+## Import libaries
 from anomalyapp.anomaly_main import *
 import pandas as pd
-#%% Read data
+
+## Read data
 original_data = "syntethic_original.csv"
 original_df = pd.read_csv(original_data, sep=";", usecols=lambda x: x != "Unnamed: 0")
 print(original_df)
-#%% Create instances of the AnomalyDetection class
+
+## Create instances of the AnomalyDetection class
 anomaly_detection_labels = AnomalyDetection(data_set=original_df, id_column='spare_part_id', features='demand_quantity', time_column='yyyymm', time_format='%Y%m', labels='true_outlier')
-#%% Call object methods
+
+## Call object methods
 anomaly_detection_labels.find_anomalies() 
 print(anomaly_detection_labels.find_anomalies())
-#%% Display performance matrix & final dataframe
+
+## Display performance matrix & final dataframe
 print(anomaly_detection_labels.performance_df)
 print(anomaly_detection_labels.final_df)
 ```
