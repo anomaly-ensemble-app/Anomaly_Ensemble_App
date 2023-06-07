@@ -228,9 +228,12 @@ This module contains the majority vote algorithm.
 This module contains the results to be displayed.
 
 1. find_parameters(self)
-   - Definition: This function is used to provide parameters of all the models. 
+   - Definition: This function is used to provide best optimal parameters of all the models. 
 
-2. find_anomalies(self)
+2. user_parameters(self)
+   - Definition: This function is used to provide user defined parameters of all the models. 
+
+3. find_anomalies(self)
    - Definition: This function is used to find the model performance. 
    
 **Input parameters:**
