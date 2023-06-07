@@ -72,7 +72,7 @@ The package consists of several modules and each module contains several functio
 
 **Package Structure:**
 
-<img src="package_structure.png" width="600" height="400">
+<img src="package_structure.png" width="700" height="450">
 
 ### Module anomaly_libs ###
 This module imports all the needed python libraries that are required to run the package.
