@@ -249,7 +249,7 @@ Anomaly_Ensemble_App has been developed and tested in Python Version: v3.7 and r
 
 ```python3 -m pip install -r "topath\requirements.txt"```
 
-### Application installation ###
+### App installation ###
 ```python3 -m pip install anomalyapp```
 
 ## Demo ##
